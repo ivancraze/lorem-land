@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef, ReactNode } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import './index.less';
 
 interface IHorizontalScrollProps {
-  children: ReactNode;
+  items: string[];
 }
 
-const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ children }) => {
+const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ items }) => {
   const [dynamicHeight, setDynamicHeight] = useState<number>(0);
   const [translateX, setTranslateX] = useState<number>(0);
 
@@ -46,6 +46,13 @@ const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ children }) => {
     };
   }, []);
 
+  const itemsRenderer = () =>
+    items.map((item, index) => (
+      <div className="scroll__item" key={`scroll__image-${index}`}>
+        <img className="scroll__image" src={item} alt="" />
+      </div>
+    ));
+
   return (
     <div className="horizontal-scroll" style={{ height: `${dynamicHeight}px` }}>
       <div className="horizontal-scroll__sticky-container" ref={containerRef}>
@@ -54,7 +61,7 @@ const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ children }) => {
           style={{ transform: `translateX(${translateX}px)` }}
           ref={objectRef}
         >
-          {children}
+          <div className="scroll__container">{itemsRenderer()}</div>
         </div>
       </div>
     </div>

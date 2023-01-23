@@ -9,19 +9,17 @@ interface IScrollProps {
 }
 
 const Scroll: React.FC<IScrollProps> = ({ items }): JSX.Element => {
-  const itemsRenderer = () =>
-    items.map((item, index) => (
-      <div className="scroll__item" key={`scroll__image-${index}`}>
-        <img className="scroll__image" src={item} alt="" />
-      </div>
-    ));
+  // const itemsRenderer = () =>
+  //   items.map((item, index) => (
+  //     <div className="scroll__item" key={`scroll__image-${index}`}>
+  //       <img className="scroll__image" src={item} alt="" />
+  //     </div>
+  //   ));
 
   return (
     <section className="scroll">
       <h2 className="scroll__title container">Lorem ipsum dolor sit amet</h2>
-      <HorizontalScroll>
-        <div className="scroll__container">{itemsRenderer()}</div>
-      </HorizontalScroll>
+      <HorizontalScroll items={items} />
     </section>
   );
 };
