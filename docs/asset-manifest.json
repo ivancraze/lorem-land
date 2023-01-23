@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/example-repo/static/css/main.1649e3d6.css",
+    "main.js": "/example-repo/static/js/main.7b892d75.js",
+    "static/js/787.76bfcab3.chunk.js": "/example-repo/static/js/787.76bfcab3.chunk.js",
+    "static/media/1-1.png": "/example-repo/static/media/1-1.4808e1f195547038a7e7.png",
+    "static/media/12.png": "/example-repo/static/media/12.0e79f2cc3f84080ea105.png",
+    "static/media/11.png": "/example-repo/static/media/11.4f8633ada7c81244f211.png",
+    "static/media/6.png": "/example-repo/static/media/6.c5f3ae1bc212dbbf6b5c.png",
+    "static/media/1-2.png": "/example-repo/static/media/1-2.37bfae55cabeca7c4ce4.png",
+    "static/media/5.png": "/example-repo/static/media/5.d9a5ba12649e8cf02662.png",
+    "static/media/2-2.png": "/example-repo/static/media/2-2.d737421272ea84785f59.png",
+    "static/media/9.png": "/example-repo/static/media/9.816d1cb934281ea3b311.png",
+    "static/media/8.png": "/example-repo/static/media/8.b5872ac1e8e0b4185781.png",
+    "static/media/2-1.png": "/example-repo/static/media/2-1.c6bb6959701b34f40085.png",
+    "static/media/3.png": "/example-repo/static/media/3.761bc2e927445e3e276d.png",
+    "static/media/10.png": "/example-repo/static/media/10.c3764752233d07f02f43.png",
+    "static/media/7.png": "/example-repo/static/media/7.04c25f4ce281ccd3fe1b.png",
+    "static/media/1.png": "/example-repo/static/media/1.ee8e7d366fbbe6ae2820.png",
+    "static/media/2.png": "/example-repo/static/media/2.6b10f183c7bf0a6a843d.png",
+    "static/media/4.png": "/example-repo/static/media/4.47dad18e76d830b06c75.png",
+    "static/media/OrchideaPro-Medium.ttf": "/example-repo/static/media/OrchideaPro-Medium.6c02bf7eeb2709cbe31b.ttf",
+    "static/media/Manrope-Medium.woff": "/example-repo/static/media/Manrope-Medium.0b1d9219581a7c8bd6ac.woff",
+    "static/media/logo.svg": "/example-repo/static/media/logo.a27d7762ed48317c74aa6cb34736b4b9.svg",
+    "static/media/phone.svg": "/example-repo/static/media/phone.5a9f5b4f6f14c624aa604859fad98b0d.svg",
+    "index.html": "/example-repo/index.html",
+    "main.1649e3d6.css.map": "/example-repo/static/css/main.1649e3d6.css.map",
+    "main.7b892d75.js.map": "/example-repo/static/js/main.7b892d75.js.map",
+    "787.76bfcab3.chunk.js.map": "/example-repo/static/js/787.76bfcab3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1649e3d6.css",
+    "static/js/main.7b892d75.js"
+  ]
+}

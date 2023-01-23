@@ -1,0 +1,54 @@
+@import '@app/styles/variables.less';
+
+.scroll {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  &__title {
+    font-family: 'OrchideaPro-Medium', sans-serif;
+    font-style: @fs-normal;
+    font-weight: @fw-400;
+    font-size: @fz-24;
+    line-height: @lh-31;
+    text-transform: uppercase;
+    // нужно, чтобы придвинуть ближе к контейнеру со скроллом, другое решение быстро не придумал.
+    margin-bottom: -100px;
+
+    @media screen and (min-width: 1200px) {
+      // нужно, чтобы придвинуть ближе к контейнеру со скроллом, другое решение быстро не придумал.
+      margin-bottom: -150px;
+      font-size: @fz-48;
+      line-height: @lh-62;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 490px;
+    width: 320px;
+    margin-right: 40px;
+    flex-shrink: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      padding: 0 0 0 250px;
+    }
+
+  }
+}

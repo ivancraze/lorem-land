@@ -1,0 +1,48 @@
+@import '@app/styles/variables.less';
+
+.header {
+  background: @color-header;
+  margin-bottom: 72px;
+
+  &__wrapper {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      display: block;
+      max-height: 20px;
+
+      @media screen and (min-width: 769px) {
+        max-height: 36px;
+      }
+    }
+  }
+
+  &__phone {
+  }
+
+  &__phone-icon {
+    display: inline;
+
+    @media screen and (min-width: 769px) {
+      display: none;
+    }
+  }
+  &__phone-number {
+    display: none;
+    font-family: 'Manrope-Medium', sans-serif;
+    font-style: @fs-normal;
+    font-weight: @fw-500;
+    font-size: @fz-24;
+    line-height: @lh-31;
+    color: @color-white;
+
+    @media screen and (min-width: 769px) {
+      display: inline;
+    }
+  }
+}
