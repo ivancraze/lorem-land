@@ -22,7 +22,9 @@ const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ items }) => {
     setDynamicHeight: React.Dispatch<React.SetStateAction<number>>,
   ) => {
     const objectWidth = ref.current?.scrollWidth;
+
     if (!objectWidth) return;
+
     const dynamicHeight = calcDynamicHeight(objectWidth);
     setDynamicHeight(dynamicHeight);
   };
@@ -40,6 +42,7 @@ const HorizontalScroll: React.FC<IHorizontalScrollProps> = ({ items }) => {
     handleDynamicHeight(objectRef, setDynamicHeight);
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScrollListener);
+
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('scroll', handleScrollListener);

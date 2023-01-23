@@ -5,8 +5,6 @@ import ContentBlock from '@app/components/ContentBlock';
 import Scroll from '@app/components/Scroll';
 import Footer from '@app/components/Footer';
 
-import './index.less';
-
 import {
   firstArticle,
   secondArticle,
